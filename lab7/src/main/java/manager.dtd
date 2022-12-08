@@ -1,0 +1,13 @@
+<!ELEMENT Manager (Team*)>
+        <!ELEMENT Team (Player*)>
+        <!ELEMENT Player (#PCDATA)>
+        <!ATTLIST Team
+                id ID #REQUIRED
+                name CDATA #REQUIRED
+                >
+        <!ATTLIST Player
+                playerId ID #REQUIRED
+                teamId IDREF #REQUIRED
+                name CDATA #REQUIRED
+                age CDATA #REQUIRED
+                >
