@@ -30,7 +30,7 @@ public class CarManager {
     }
 
     public synchronized List<Car> getCarsByYearAndPrice(int a, int b) {
-        List<Car> res = new ArrayList<>(cars);
+        List<Car> res = new ArrayList<>();
         cars.forEach(car -> {
             if (Objects.equals(car.getDeployYear(), a) && car.getPrice()>b)
                 res.add(car);
