@@ -30,12 +30,12 @@ public class ClientRmiTask8 {
         Scanner in = new Scanner(System.in);
 
         try {
-            RMIServer rmiServer = (RMIServer) Naming.lookup("//localhost:1234/exam");
+            RMIServer rmiServer = (RMIServer) Naming.lookup("//localhost:123/exam");
 
             System.out.println(
                     """
                     Choose option:
-                    1 - display Cars in alphabetic order
+                    1 - display Cars used longer than 'a'
                     2 - display Cars which deploy year 'a' and price bigger than 'b'
                     """
             );
